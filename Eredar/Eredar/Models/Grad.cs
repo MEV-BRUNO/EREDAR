@@ -10,7 +10,7 @@ namespace Eredar.Models
         public int Id { get; set; }
         public string Naziv { get; set; }
 
-        public string Zupanja { get; set; }
+        public string Zupanija { get; set; }
 
 
     }
