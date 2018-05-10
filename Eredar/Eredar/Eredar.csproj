@@ -156,6 +156,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Arhiva.cs" />
+    <Compile Include="Models\Grad.cs" />
+    <Compile Include="Models\Korisnici.cs" />
+    <Compile Include="Models\Prijava.cs" />
+    <Compile Include="Models\Vrste_prijava.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -199,7 +204,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Baza_arhiva\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
