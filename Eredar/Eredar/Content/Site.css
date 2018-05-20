@@ -17,8 +17,45 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
+
+/*detalji u vezi tabova kod detalja prijave*/
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: white;
+}
+
+    ul.tabs li {
+        background: none;
+        color: blue;
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: white;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+        ul.tabs li.current {
+            background: white;
+            color: blue;
+            background-color: white;
+        }
+
+.tab-content {
+    display: none;
+    background: white;
+    padding: 15px;
+}
+
+    .tab-content.current {
+        display: inherit;
+        border: 1px;
+        border-color: green;
+    }
