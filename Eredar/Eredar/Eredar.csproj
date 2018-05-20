@@ -154,12 +154,14 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DetaljiPrijaveController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LOGINController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Arhiva.cs" />
     <Compile Include="Models\Grad.cs" />
     <Compile Include="Models\Korisnici.cs" />
+    <Compile Include="Models\LOGIN.cs" />
     <Compile Include="Models\Prijava.cs" />
     <Compile Include="Models\Vrste_prijava.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -247,6 +249,10 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\DetaljiPrijave\DetaljiPrijave.cshtml" />
+    <Content Include="Views\LOGIN.cshtml" />
+    <Content Include="Views\LOGIN\Login.cshtml" />
+    <Content Include="Views\LOGIN\REGISTRACIJA.cshtml" />
+    <Content Include="Views\LOGIN\ZABORAVLJENAlozinka.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
