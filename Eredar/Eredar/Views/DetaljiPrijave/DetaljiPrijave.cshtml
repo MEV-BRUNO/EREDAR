@@ -1,0 +1,59 @@
+﻿@*kreairanje tabova za detalje prijave>>>*@
+<div class="container">
+    <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">PODACI</li>
+        <li class="tab-link" data-tab="tab-2">LOKACIJA</li>
+        <li class="tab-link" data-tab="tab-3">SLIKA</li>
+    </ul>
+
+    <div id="tab-1" class="tab-content current">
+        @*treba jos doraditi logiku kako da ispise tocno upisani naslov*@
+        <h2>Naslov prijave: @Model.Naslov</h2>
+        <h2>Prijava smeca na zelenoj povrsini:</h2>
+        <h2>Datum prijave: @Model.Zaprimljena</h2>
+        <h2>Datum odgovora: @Model.Zavrsena</h2>
+        <h2>Adresa: @Model.Adresa</h2>
+        <h2>Status prijave: @Model.Id_status_prijava</h2>
+        <h2>Tekst prijave: </h2>
+        <h2>Odgovor sluzbe: </h2>
+        
+    </div>
+    <div id="tab-2" class="tab-content">tu treba napisati logiku za Lokaciju</div>
+    <div id="tab-3" class="tab-content">@Model.Slika</div>
+</div>
+@*sljedece linije su za odlucivanje koji tab ce se otvoriti>>>*@
+@*zbog nekog razloga kod testiranja drugi tabovi se ne zele otvoriti pa ovo treba doraditi.*@  
+<script>
+    $(document).ready(function () {
+        $('ul.tabs li').click(function () {
+            var tab_id = $(this).attr('data-tab');
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        });
+        $('ul.tabs li').mouseover(function () {
+            var tab_id = $(this).attr('data-tab');
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        });
+    });
+</script>
+
+@model Eredar.Models.Prijava
+@{
+    ViewBag.Title = "DetaljiPrijave";
+}
+
+
+
+
+
+
+
+
+
+
+
