@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "AdminLayout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- MENU SECTION -->
+<div id="left">
+    @Html.Partial("~/Views/Admin/AdminNavigation.cshtml")
+</div>
+<!--END MENU SECTION -->
+<!--PAGE CONTENT -->
+<div id="content">
+    <div class="inner">
+        @RenderBody()
+    </div>
+</div>
+<!--END PAGE CONTENT -->
