@@ -26,5 +26,12 @@ namespace Eredar.Controllers
 
             return View();
         }
+
+        public ActionResult PregledKorisnika()
+        {
+            ViewBag.Message = "PregledKorisnika";
+
+            return View();
+        }
     }
 }
