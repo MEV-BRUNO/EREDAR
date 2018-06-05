@@ -33,5 +33,11 @@ namespace Eredar.Controllers
 
             return View();
         }
+        public ActionResult BrisanjePrijava()
+        {
+            ViewBag.Message = "BrisanjePrijava";
+
+            return View();
+        }
     }
 }
