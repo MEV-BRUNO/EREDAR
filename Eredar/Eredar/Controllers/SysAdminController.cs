@@ -13,5 +13,10 @@ namespace Eredar.Controllers
         {
             return View();
         }
+
+        public ActionResult PregledPrijava()
+        {
+            return PartialView();
+        }
     }
 }
