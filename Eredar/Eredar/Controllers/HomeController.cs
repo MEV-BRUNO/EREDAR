@@ -36,7 +36,7 @@ namespace Eredar.Controllers
         public ActionResult BrisanjePrijava()
         {
             ViewBag.Message = "BrisanjePrijava";
-
+            //...
             return View();
         }
     }
