@@ -2272,7 +2272,6 @@
     <Content Include="Views\Public\Kontakt.cshtml" />
     <Content Include="Views\Public\Prijava.cshtml" />
     <Content Include="Views\Public\PublicLayout.cshtml" />
-    <Content Include="Views\SysAdmin\PregledPrijava.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
