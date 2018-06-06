@@ -22,7 +22,7 @@ namespace Eredar.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
-
+        
         // POST: Account/Login
         [HttpPost]
         [AllowAnonymous]
@@ -80,7 +80,7 @@ namespace Eredar.Controllers
             }
             return View(model);
         }
-
+        
 
 
     }
